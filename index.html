@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title> New Motivational Msg Walla </title>
+		<style>
+			* { font-size: 50px; font-family: Cambria; }
+			body { background-color: azure; }
+		</style>
+	</head>
+	<body>
+		<center>
+			<h1> New Motivational Msg Waala </h1>
+			<h2 id="msg"/>
+
+			<script>
+				function show()
+				{
+					let msg = document.getElementById("msg");
+			
+					let quotes = ["trust the process", "believe in you", "you can do it", "all the best", "wow i like it"];
+					let r = parseInt(Math.random() * quotes.length);		// any random int between 0 to 4
+					let ans = quotes[r];
+					msg.innerHTML = ans;
+				}
+				show();
+				setInterval(show, 5000);
+			</script>
+			
+		</center>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
